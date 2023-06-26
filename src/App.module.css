@@ -1,0 +1,105 @@
+header {
+  width: 100%;
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray-700);
+}
+
+main{
+
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -1.625rem;
+  width: 100%;
+}
+
+form input{
+  padding: 1rem;
+  background-color: var(--gray-500);
+  flex: 1;
+  border: none;
+  font-size: 1rem;
+  font-family: 'Inter' , 'sans-serif';
+  color: var(--gray-100);
+  
+}
+form input::placeholder{
+  font-size: 1rem;
+  font-family: 'Inter' , 'sans-serif';
+  color: var(--gray-300);
+}
+
+form input:focus{
+  outline: 2px solid var(--dark-purple);
+}
+
+form button {
+  background-color: var(--dark-blue);
+  color: var(--gray-100);
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+form button:hover {
+  background-color: var(--blue);
+}
+
+.taskInfo{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.taskInfo div{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.taskInfo span{
+  font-family: 'Inter' , 'sans-serif';
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 0.125px 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.MsgEmptyList{
+  text-align: center;
+  margin-top: 4rem;
+}
+.MsgEmptyList p {
+  color: var(--gray-300);
+}
+.MsgEmptyList img {
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  main{
+    padding:0  1rem;
+  }
+  form input {
+    padding-right: 0;
+    width: 100px;
+  }
+}
